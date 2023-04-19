@@ -1,7 +1,9 @@
+import Section from "@/components/Section";
+
 const HomePage = () => {
   return (
     <div>
-      <p>hello giraffe!</p>
+      <Section />
     </div>
   );
 };
