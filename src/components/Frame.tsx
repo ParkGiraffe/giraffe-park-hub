@@ -7,8 +7,9 @@ const Frame = styled.div`
   border-radius: 20px;
   border: 2px solid #2e2e2e;
   display: flex;
-  justify-content: center;
+  /* justify-content: space-between; */
   align-items: center;
+  flex-direction: column;
 `
 
 export default Frame;
