@@ -10,6 +10,7 @@ const Container = styled.div`
   /* background-color: white; */
   margin-bottom: 15px;
   margin-top: 5px;
+  height: 60px;
 `;
 
 const DesText = (props: { park: string }) => {
@@ -21,9 +22,10 @@ const DesText = (props: { park: string }) => {
         </Desciption>
       )}
       {props.park === "GitHub" && (
-        <Desciption>
-          박기린의 코딩 작업물이 한곳에 모여있습니다.
-        </Desciption>
+        <Desciption>박기린의 코딩 작업물이 한곳에 모여있습니다.</Desciption>
+      )}
+      {props.park === "Portfolio" && (
+        <Desciption>박기린을 소개합니다.</Desciption>
       )}
     </Container>
   );

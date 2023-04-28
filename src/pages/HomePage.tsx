@@ -5,6 +5,7 @@ const HomePage = () => {
     <div>
       <Section park={'Blog'}/>
       <Section park={'GitHub'}/>
+      <Section park={'Portfolio'}/>
     </div>
   );
 };
