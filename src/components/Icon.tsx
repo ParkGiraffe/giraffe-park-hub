@@ -1,9 +1,10 @@
 import styled from "styled-components";
 import Image from "next/image";
-import logo from "@images/logos/tistory.svg";
+import tistoryLogo from "@images/logos/tistory.svg";
+import githubLogo from "@images/logos/github.svg";
 
 const IconContainer = styled.div`
-  background-color: black;
+  /* background-color: white; */
   width: 45px;
   height: 45px;
   border-radius: 25px;
@@ -14,10 +15,11 @@ const IconContainer = styled.div`
   overflow: hidden;
 `;
 
-const Icon = () => {
+const Icon = (props: { park: string }) => {
   return (
     <IconContainer>
-      <Image src={logo} alt="logo" width={60} height={60} />
+      {props.park === 'Blog' && <Image src={tistoryLogo} alt="blog" width={60} height={60} />}
+      {props.park === 'GitHub' && <Image src={githubLogo} alt="github" width={45} height={45} />}
     </IconContainer>
   );
 };

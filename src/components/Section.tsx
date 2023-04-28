@@ -5,14 +5,13 @@ import DesText from "./DesText";
 import Icon from "./Icon";
 import PagePreview from "./PagePreview";
 
-const Section = () => {
+const Section = (props: { park: string }) => {
   return(
     <Frame>
-      <Icon />
-      <ParkText>Blog Park</ParkText>
-      {/* <LinkButton /> */}
-      <DesText/>
-      <PagePreview />
+      <Icon park={props.park}/>
+      <ParkText>{props.park} Park</ParkText>
+      <DesText park={props.park}/>
+      <PagePreview park={props.park}/>
     </Frame>
   )
 }

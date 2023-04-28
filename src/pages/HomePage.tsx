@@ -3,7 +3,8 @@ import Section from "@/components/Section";
 const HomePage = () => {
   return (
     <div>
-      <Section />
+      <Section park={'Blog'}/>
+      <Section park={'GitHub'}/>
     </div>
   );
 };
