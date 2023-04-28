@@ -1,13 +1,15 @@
 import styled from "styled-components";
 
-const Desciption = styled.p`
-  font-size: 18pt;
-  font-weight: 400;
+const Desciption = styled.text`
+  font-size: 17pt;
+  font-weight: 350;
 `;
 
 const Container = styled.div`
-  /* padding: 5px; */
+  padding-right: 20px;
   /* background-color: white; */
+  margin-bottom: 15px;
+  margin-top: 5px;
 `;
 
 const DesText = () => {
