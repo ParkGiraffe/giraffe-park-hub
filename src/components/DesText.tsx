@@ -1,19 +1,19 @@
 import styled from "styled-components";
 
 const Desciption = styled.p`
-  font-size: 15;
+  font-size: 18pt;
+  font-weight: 400;
 `;
 
 const Container = styled.div`
-  padding: 5px;
+  /* padding: 5px; */
+  /* background-color: white; */
 `;
 
 const DesText = () => {
   return (
     <Container>
-      <Desciption>Description 1</Desciption>
-      <Desciption>Description 2</Desciption>
-      <Desciption>Description 3</Desciption>
+      <Desciption>박기린의 취미, 공부, 제작물 등 여러 발자취가 한곳에 모여있습니다.</Desciption>
     </Container>
   );
 };

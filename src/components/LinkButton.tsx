@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const ButtonContainer = styled.div`
-  background-color: cyan;
+  background-color: #FB413A;
   width: 260px;
   height: 57px;
   border-radius: 50px;
@@ -19,7 +19,7 @@ const ImgContainer = styled.div`
 `;
 
 const TextContainer = styled.div`
-  background-color: greenyellow;
+  /* background-color: greenyellow; */
   width: 200px;
   display: flex;
   /* align-items: center; */
@@ -28,6 +28,7 @@ const TextContainer = styled.div`
 const ButtonText = styled.text`
   font-weight: bold;
   font-size: 25px;
+  color: white;
 `;
 
 const LinkButton = () => {
