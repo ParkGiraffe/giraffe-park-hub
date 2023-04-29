@@ -36,12 +36,6 @@ const PagePreview = (props: { park: string }) => {
 
   return (
     <PreviewContainer>
-      {/* {props.park === "Blog" && (
-        <Image src={blogPage} alt="blog" width={200} height={200} />
-      )}
-      {props.park === "GitHub" && (
-        <Image src={githubPage} alt="github" width={200} height={200} />
-      )} */}
       {page}
     </PreviewContainer>
   );

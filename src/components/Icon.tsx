@@ -17,13 +17,20 @@ const IconContainer = styled.div`
 `;
 
 const Icon = (props: { park: string }) => {
-  return (
-    <IconContainer>
-      {props.park === 'Blog' && <Image src={tistoryLogo} alt="blog" width={60} height={60} />}
-      {props.park === 'GitHub' && <Image src={githubLogo} alt="github" width={45} height={45} />}
-      {props.park === 'Portfolio' && <Image src={giraffeLogo} alt="giraffe" width={45} height={45} />}
-    </IconContainer>
-  );
+  let logo;
+
+  if (props.park === "Blog") {
+    logo = <Image src={tistoryLogo} alt="blog" width={60} height={60} />;
+  } else if (props.park === "GitHub") {
+    logo = <Image src={githubLogo} alt="github" width={45} height={45} />;
+  } else if (props.park === "Portfolio") {
+    logo = <Image src={giraffeLogo} alt="giraffe" width={45} height={45} />;
+  } else {
+    logo = <text>준비 중</text>;
+  }
+
+  
+  return <IconContainer>{logo}</IconContainer>;
 };
 
 export default Icon;
