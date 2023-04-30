@@ -7,6 +7,7 @@ const HomePage = () => {
       <Section park={'GitHub'}/>
       <Section park={'Portfolio'}/>
       <Section park={'Gaming'}/>
+      <Section park={'Character'}/>
     </div>
   );
 };

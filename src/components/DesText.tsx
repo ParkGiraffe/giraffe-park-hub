@@ -30,7 +30,15 @@ const DesText = (props: { park: string }) => {
     description = <Desciption>박기린을 소개합니다.</Desciption>;
   } else if (props.park === "Gaming") {
     description = (
-      <Desciption>게임을 정말 많이 사랑하는 박기린을 위해 만든 공원입니다.</Desciption>
+      <Desciption>
+        게임을 정말 많이 사랑하는 박기린을 위해 만든 공원입니다.
+      </Desciption>
+    );
+  } else if (props.park === "Character") {
+    description = (
+      <Desciption>
+        내가그린기린그림을 소개합니다.
+      </Desciption>
     );
   } else {
     description = <text>준비 중</text>;
