@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const Frame = styled.div`
-  background-color: #d9d9d9;
+  background-color: #F8BE57;
   width: 320px;
   height: 360px;
   border-radius: 20px;

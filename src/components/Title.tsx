@@ -3,19 +3,21 @@ import styled from "styled-components";
 const TitleConatiner = styled.div`
   display: flex;
   flex-direction: column;
-  margin-top: 45px;
+  margin-top: 50px;
 `;
 
 const SignatureText = styled.text`
-  font-size: 16px;
+  font-size: 18px;
   text-align: center;
   font-weight: 700;
+  /* color: #2C1D1A; */
 `;
 
 const TitleText = styled.text`
   font-size: 76.5px;
   text-align: center;
   font-weight: 700;
+  color: #2C1D1A;
 `;
 
 const Title = () => {

@@ -3,6 +3,7 @@ import styled from "styled-components";
 const Desciption = styled.text`
   font-size: 16pt;
   font-weight: 350;
+  color: #372420;
 `;
 
 const Container = styled.div`
@@ -35,11 +36,7 @@ const DesText = (props: { park: string }) => {
       </Desciption>
     );
   } else if (props.park === "Character") {
-    description = (
-      <Desciption>
-        내가그린기린그림을 소개합니다.
-      </Desciption>
-    );
+    description = <Desciption>내가그린기린그림을 소개합니다.</Desciption>;
   } else {
     description = <text>준비 중</text>;
   }
