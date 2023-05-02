@@ -1,0 +1,30 @@
+import styled from "styled-components";
+
+const TitleConatiner = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin-top: 5%;
+`;
+
+const SignatureText = styled.text`
+  font-size: 16px;
+  text-align: center;
+  font-weight: 700;
+`;
+
+const TitleText = styled.text`
+  font-size: 76.5px;
+  text-align: center;
+  font-weight: 700;
+`;
+
+const Title = () => {
+  return (
+    <TitleConatiner>
+      <SignatureText>기린은 선악과를 먹고 공원을 짓는다.</SignatureText>
+      <TitleText>GiraffePark</TitleText>
+    </TitleConatiner>
+  );
+};
+
+export default Title;
