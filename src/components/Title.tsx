@@ -3,7 +3,7 @@ import styled from "styled-components";
 const TitleConatiner = styled.div`
   display: flex;
   flex-direction: column;
-  margin-top: 5%;
+  margin-top: 45px;
 `;
 
 const SignatureText = styled.text`
