@@ -30,11 +30,12 @@ const MobileContainer = styled.div`
   flex-direction: column;
   /* background-color: white; */
   align-items: center;
-`
-
+`;
 
 const HomePage = () => {
-  const [width, setWidth] = useState<number>(window.innerWidth);
+  const [width, setWidth] = useState<number>(
+    typeof window !== "undefined" ? window.innerWidth : 0
+  );
 
   const handleResize = () => {
     setWidth(window.innerWidth);
@@ -71,14 +72,14 @@ const HomePage = () => {
     return (
       <MobileContainer>
         <Title />
-          <Section park={"Blog"} />
-          <FirstLineBlock />
-          <Section park={"Portfolio"} />
-          <FirstLineBlock />
-          <Section park={"GitHub"} />
-          <Section park={"Gaming"} />
-          <FirstLineBlock />
-          <Section park={"Character"} />
+        <Section park={"Blog"} />
+        <FirstLineBlock />
+        <Section park={"Portfolio"} />
+        <FirstLineBlock />
+        <Section park={"GitHub"} />
+        <Section park={"Gaming"} />
+        <FirstLineBlock />
+        <Section park={"Character"} />
       </MobileContainer>
     );
   }
