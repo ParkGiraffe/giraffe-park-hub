@@ -14,7 +14,7 @@ const SignatureText = styled.text`
 `;
 
 const TitleText = styled.text`
-  font-size: 76.5px;
+  font-size: 4.2em;
   text-align: center;
   font-weight: 700;
   color: #2C1D1A;
