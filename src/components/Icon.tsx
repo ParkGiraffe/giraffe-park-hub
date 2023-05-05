@@ -3,6 +3,7 @@ import Image from "next/image";
 import tistoryLogo from "@images/logos/tistory.svg";
 import githubLogo from "@images/logos/github.svg";
 import giraffeLogo from "@images/logos/giraffe.png";
+import dummy from '@images/logos/dummy.png'
 
 const IconContainer = styled.div`
   /* background-color: white; */
@@ -26,7 +27,7 @@ const Icon = (props: { park: string }) => {
   } else if (props.park === "Portfolio") {
     logo = <Image src={giraffeLogo} alt="giraffe" width={45} height={45} />;
   } else {
-    logo = <text>준비 중</text>;
+    logo = <Image src={dummy} alt="dummy" width={45} height={45} />;
   }
 
   
