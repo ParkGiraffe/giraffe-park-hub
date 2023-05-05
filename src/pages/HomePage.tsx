@@ -37,7 +37,7 @@ const HomePage = () => {
 
   useEffect(() => {
     setWidth(window.innerWidth);
-  })
+  });
 
   useEffect(() => {
     window.addEventListener("resize", handleResize);
@@ -47,14 +47,14 @@ const HomePage = () => {
     };
   }, []);
 
-
   const handleResize = () => {
     setWidth(window.innerWidth);
     console.log(width);
   };
 
-
-  if (width > 884) {
+  if (width === 0) {
+    return <></>;
+  } else if (width > 884) {
     return (
       <>
         <Title />
