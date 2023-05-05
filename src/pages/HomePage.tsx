@@ -33,14 +33,11 @@ const MobileContainer = styled.div`
 `;
 
 const HomePage = () => {
-  const [width, setWidth] = useState<number>(
-    typeof window !== "undefined" ? window.innerWidth : 0
-  );
+  const [width, setWidth] = useState<number>(0);
 
-  const handleResize = () => {
+  useEffect(() => {
     setWidth(window.innerWidth);
-    console.log(width);
-  };
+  })
 
   useEffect(() => {
     window.addEventListener("resize", handleResize);
@@ -49,6 +46,13 @@ const HomePage = () => {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
+
+
+  const handleResize = () => {
+    setWidth(window.innerWidth);
+    console.log(width);
+  };
+
 
   if (width > 884) {
     return (
